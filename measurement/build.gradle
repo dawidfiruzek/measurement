@@ -1,0 +1,61 @@
+apply plugin: 'kotlin'
+apply plugin: 'com.jfrog.bintray'
+apply plugin: 'maven-publish'
+
+buildscript {
+    ext.libVersionName = "1.0"
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3'
+    }
+}
+
+bintray {
+    user=BINTRAY_USER
+    key=BINTRAY_KEY
+    publications = ['release']
+    pkg {
+        repo = 'kotlin'
+        name = 'measurement'
+        licenses = ['Apache-2.0']
+        desc = 'Measurement library based on Swift\'s Measurement structure'
+        vcsUrl = 'https://github.com/dawidfiruzek/measurement.git'
+        labels = ['jar', 'kotlin']
+        publicDownloadNumbers = true
+        version {
+            name = libVersionName
+            released  = new Date()
+        }
+    }
+}
+
+publishing {
+    publications {
+        release(MavenPublication) {
+            artifact("$buildDir/libs/measurement.jar")
+            groupId 'pl.dawidfiruzek'
+            artifactId 'measurement'
+            version libVersionName
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"
+
+task uploadLib(type: GradleBuild) {
+    tasks = [
+            ':measurement:clean',
+            ':measurement:assemble',
+            ':measurement:generatePomFileForReleasePublication',
+            ':measurement:bintrayUpload'
+    ]
+}
