@@ -1,2 +1,50 @@
-# measurement
-Measurement library is based on Swift's Measurement structure
+# Measurement
+Measurement is a lightweight library based on the Swift's Measurement structure.
+
+It is made to help Java/Kotlin developers converting units to different, corresponding units with ease, e.g. for weight: stones to kilograms.
+Measurement also allows arithmetic operation between different, corresponding units. Just like in previous example you can add 2 kilograms to 4 stones and have result in pounds.
+
+Measurement is written in Kotlin, so it can interop with Java. 
+It has sample project written for Android framework, however the library itself has no dependencies to other frameworks and could be used in pure Java or Kotlin projects.
+
+## Usage
+### 1. Add gradle dependency
+```
+compile 'pl.dawidfiruzek:measurement:0.1'
+```
+
+### 2. Use it in your project
+Example usage:
+```Kotlin
+val baseMeasurement = Measurement(3.45, LengthUnits.METERS)
+val arithmeticResult = baseMeasurement + Measurement(0.77, LengthUnits.INCHES)
+val result: Double = arithmeticResult.to(LengthUnits.FEET)
+```
+
+## Development plans
+Note that the library is in development phase, but is ready to use with it's minimal functionality.
+
+For now it supports basic weight and length units with adding and substraction operation between corresponding types. 
+
+Next development steps are:
+- support more weight and length units
+- add more arithmetics operations (multiplication, division)
+- (Later) add area, and volume units with arithmetics operations
+
+
+License
+-------
+
+    Copyright 2017 Dawid Firuzek
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
