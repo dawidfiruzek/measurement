@@ -20,7 +20,7 @@ bintray {
         repo = 'kotlin'
         name = 'measurement'
         licenses = ['Apache-2.0']
-        desc = 'Measurement library based on Swift\'s Measurement structure'
+        desc = 'Measurement library based on the Swift\'s Measurement structure'
         vcsUrl = 'https://github.com/dawidfiruzek/measurement.git'
         labels = ['jar', 'kotlin']
         publicDownloadNumbers = true
