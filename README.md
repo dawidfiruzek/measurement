@@ -1,3 +1,6 @@
+# Disclaimer
+Library is in alpha phase, but is ready to use with it's basic functionality
+
 # Measurement
 Measurement is a lightweight library based on the Swift's Measurement structure.
 
@@ -10,7 +13,7 @@ It has sample project written for Android framework, however the library itself 
 ## Usage
 ### 1. Add gradle dependency
 ```
-compile 'pl.dawidfiruzek:measurement:0.1'
+compile 'pl.dawidfiruzek:measurement:0.2'
 ```
 
 ### 2. Use it in your project
@@ -24,12 +27,12 @@ val result: Double = arithmeticResult.to(LengthUnits.FEET)
 ## Development plans
 Note that the library is in development phase, but is ready to use with it's minimal functionality.
 
-For now it supports basic weight and length units with adding and substraction operation between corresponding types. 
+For now it supports basic weight and length units with adding and subtraction operation between corresponding types.
 
 Next development steps are:
-- support more weight and length units
-- add more arithmetics operations (multiplication, division)
-- (Later) add area, and volume units with arithmetics operations
+- support more <del>weight and</del> length units
+- add more arithmetic's operations (multiplication, division)
+- (Later) add area, and volume units with arithmetic's operations
 
 
 License

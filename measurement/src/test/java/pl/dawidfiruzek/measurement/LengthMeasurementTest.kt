@@ -1,9 +1,14 @@
 package pl.dawidfiruzek.measurement
 
-import org.junit.Assert
+import org.junit.Assert.assertEquals
 import org.junit.Before
 import org.junit.Test
 import pl.dawidfiruzek.measurement.units.length.LengthUnits
+import pl.dawidfiruzek.measurement.units.length.LengthUnits.CENTIMETERS
+import pl.dawidfiruzek.measurement.units.length.LengthUnits.FEET
+import pl.dawidfiruzek.measurement.units.length.LengthUnits.INCHES
+import pl.dawidfiruzek.measurement.units.length.LengthUnits.METERS
+import pl.dawidfiruzek.measurement.units.length.LengthUnits.MILLIMETERS
 
 class LengthMeasurementTest : BaseTest() {
 
@@ -11,17 +16,28 @@ class LengthMeasurementTest : BaseTest() {
 
     @Before
     fun setUp() {
-        measurement = Measurement(3.45, LengthUnits.METERS)
+        measurement = Measurement(3.45, METERS)
     }
 
     @Test
-    fun test() {
-        val result = measurement + Measurement(0.77, LengthUnits.METERS)
+    fun testAddition() {
+        val result = measurement + Measurement(0.77, METERS)
 
-        Assert.assertEquals(4.22, result.to(LengthUnits.METERS), delta)
-        Assert.assertEquals(422.0, result.to(LengthUnits.CENTIMETERS), delta)
-        Assert.assertEquals(4220.0, result.to(LengthUnits.MILLIMETERS), delta)
-        Assert.assertEquals(166.1417322836, result.to(LengthUnits.INCHES), delta)
-        Assert.assertEquals(13.8451443569, result.to(LengthUnits.FEET), delta)
+        assertEquals(4.22, result.to(METERS), delta)
+        assertEquals(4.220e2, result.to(CENTIMETERS), delta)
+        assertEquals(4.2200e3, result.to(MILLIMETERS), delta)
+        assertEquals(1.661417322836e2, result.to(INCHES), delta)
+        assertEquals(1.38451443569e1, result.to(FEET), delta)
+    }
+
+    @Test
+    fun testSubtraction() {
+        val result = measurement - Measurement(4.894, METERS)
+
+        assertEquals(-1.444, result.to(METERS), delta)
+        assertEquals(-1.444e2, result.to(CENTIMETERS), delta)
+        assertEquals(-1.444e3, result.to(MILLIMETERS), delta)
+        assertEquals(-5.68503937008e1, result.to(INCHES), delta)
+        assertEquals(-4.7375328084, result.to(FEET), delta)
     }
 }
