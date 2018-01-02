@@ -2,6 +2,7 @@ package pl.dawidfiruzek.measurement
 
 import pl.dawidfiruzek.measurement.units.Units
 import java.math.BigDecimal
+import java.math.RoundingMode
 
 class Measurement<T : Units>(private val value: BigDecimal, private val units: T) {
 
@@ -34,6 +35,16 @@ class Measurement<T : Units>(private val value: BigDecimal, private val units: T
 
     operator fun times(factor: Int): Measurement<T> {
         val value = value * BigDecimal(factor)
+        return Measurement(value, units)
+    }
+
+    operator fun div(factor: Double): Measurement<T> {
+        val value = value.divide(BigDecimal(factor), 10, RoundingMode.HALF_UP)
+        return Measurement(value, units)
+    }
+
+    operator fun div(factor: Int): Measurement<T> {
+        val value = value.divide(BigDecimal(factor), 10, RoundingMode.HALF_UP)
         return Measurement(value, units)
     }
 }

@@ -62,4 +62,26 @@ class LengthMeasurementTest : BaseTest() {
         assertEquals(2.7165354330738e2, result.to(INCHES), delta)
         assertEquals(2.26377952755e1, result.to(FEET), delta)
     }
+
+    @Test
+    fun testDoubleDivision() {
+        val result = measurement / 1.46
+
+        assertEquals(2.3630136986, result.to(METERS), delta)
+        assertEquals(2.3630136986e2, result.to(CENTIMETERS), delta)
+        assertEquals(2.3630136986e3, result.to(MILLIMETERS), delta)
+        assertEquals(9.30320353780532e1, result.to(INCHES), delta)
+        assertEquals(7.75266961479839, result.to(FEET), delta)
+    }
+
+    @Test
+    fun testIntegerDivision() {
+        val result = measurement / 7
+
+        assertEquals(0.4928571429, result.to(METERS), delta)
+        assertEquals(0.4928571429e2, result.to(CENTIMETERS), delta)
+        assertEquals(0.4928571429e3, result.to(MILLIMETERS), delta)
+        assertEquals(1.94038245236e1, result.to(INCHES), delta)
+        assertEquals(1.61698537696204, result.to(FEET), delta)
+    }
 }
