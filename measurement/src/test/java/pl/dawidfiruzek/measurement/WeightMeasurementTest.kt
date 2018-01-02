@@ -82,4 +82,9 @@ class WeightMeasurementTest : BaseTest() {
         assertEquals(3.4e3, result.to(WeightUnits.CARATS), delta)
         assertEquals(1.04940036800002e4, result.to(WeightUnits.GRAINS), delta)
     }
+
+    @Test
+    fun testMultiplication() {
+
+    }
 }

@@ -26,4 +26,9 @@ class Measurement<T : Units>(private val value: BigDecimal, private val units: T
         val value = value / units.factor - measurement.value / measurement.units.factor
         return Measurement(value, baseUnits)
     }
+
+    operator fun times(factor: Double): Measurement<T> {
+        val value = value * BigDecimal(factor)
+        return Measurement(value, units)
+    }
 }

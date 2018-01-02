@@ -40,4 +40,15 @@ class LengthMeasurementTest : BaseTest() {
         assertEquals(-5.68503937008e1, result.to(INCHES), delta)
         assertEquals(-4.7375328084, result.to(FEET), delta)
     }
+
+    @Test
+    fun testMultiplication() {
+        val result = measurement * 2.0
+
+        assertEquals(6.9, result.to(METERS), delta)
+        assertEquals(6.9e2, result.to(CENTIMETERS), delta)
+        assertEquals(6.9e3, result.to(MILLIMETERS), delta)
+        assertEquals(2.7165354330738e2, result.to(INCHES), delta)
+        assertEquals(2.26377952755e1, result.to(FEET), delta)
+    }
 }
