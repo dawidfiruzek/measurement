@@ -133,32 +133,32 @@ class WeightMeasurementTest : BaseTest() {
         assertEquals(9.25941501176484e4, result.to(WeightUnits.GRAINS), delta)
     }
 
-    //todo fix values
     @Test
     fun testDoubleDivision() {
         val result = measurement / 2.11
 
-        assertEquals(6.8e-1, result.to(KILOGRAMS), delta)
-        assertEquals(6.8e-4, result.to(TONNES), delta)
-        assertEquals(6.8e1, result.to(DEKAGRAMS), delta)
-        assertEquals(6.8e2, result.to(GRAMS), delta)
-        assertEquals(6.8e4, result.to(CENTIGRAMS), delta)
-        assertEquals(6.8e5, result.to(MILLIGRAMS), delta)
-        assertEquals(6.8e8, result.to(MICROGRAMS), delta)
-//        assertEquals(6.6926042e-4, result.to(WeightUnits.LONG_TONS), delta)
-//        assertEquals(7.49571684e-4, result.to(WeightUnits.SHORT_TONS), delta)
-//        assertEquals(1.338520881e-2, result.to(WeightUnits.HUNDREDWEIGHTS), delta)
-//        assertEquals(1.499143382e-2, result.to(WeightUnits.CENTALS), delta)
-//        assertEquals(5.35408351e-2, result.to(WeightUnits.QUARTERS), delta)
-//        assertEquals(1.070816702e-1, result.to(WeightUnits.STONES), delta)
-//        assertEquals(1.4991433828, result.to(WeightUnits.POUNDS), delta)
-//        assertEquals(2.39862941257e1, result.to(WeightUnits.OUNCES), delta)
-//        assertEquals(3.837807060114e2, result.to(WeightUnits.DRAMS), delta)
-//        assertEquals(4.372501533334e2, result.to(WeightUnits.PENNYWEIGHTS), delta)
-//        assertEquals(3.4e3, result.to(WeightUnits.CARATS), delta)
-//        assertEquals(1.04940036800002e4, result.to(WeightUnits.GRAINS), delta)
+        assertEquals(9.478672986e-1, result.to(KILOGRAMS), delta)
+        assertEquals(9.478672986e-4, result.to(TONNES), delta)
+        assertEquals(9.478672986e1, result.to(DEKAGRAMS), delta)
+        assertEquals(9.478672986e2, result.to(GRAMS), delta)
+        assertEquals(9.478672986e4, result.to(CENTIGRAMS), delta)
+        assertEquals(9.478672986e5, result.to(MILLIGRAMS), delta)
+        assertEquals(9.478672986e8, result.to(MICROGRAMS), delta)
+        assertEquals(9.32897183e-4, result.to(WeightUnits.LONG_TONS), delta)
+        assertEquals(1.044844844e-3, result.to(WeightUnits.SHORT_TONS), delta)
+        assertEquals(1.86579437e-2, result.to(WeightUnits.HUNDREDWEIGHTS), delta)
+        assertEquals(2.089689687e-2, result.to(WeightUnits.CENTALS), delta)
+        assertEquals(7.46317746e-2, result.to(WeightUnits.QUARTERS), delta)
+        assertEquals(1.492635492e-1, result.to(WeightUnits.STONES), delta)
+        assertEquals(2.089689689, result.to(WeightUnits.POUNDS), delta)
+        assertEquals(3.34350350241e1, result.to(WeightUnits.OUNCES), delta)
+        assertEquals(5.349605603851e2, result.to(WeightUnits.DRAMS), delta)
+        assertEquals(6.094928259596e2, result.to(WeightUnits.PENNYWEIGHTS), delta)
+        assertEquals(4.739336493e3, result.to(WeightUnits.CARATS), delta)
+        assertEquals(1.46278278230297e4, result.to(WeightUnits.GRAINS), delta)
     }
 
+    //todo fix values
     @Test
     fun testIntegerDivision() {
         val result = measurement / 13
