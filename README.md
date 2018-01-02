@@ -13,7 +13,7 @@ It has sample project written for Android framework, however the library itself 
 ## Usage
 ### 1. Add gradle dependency
 ```
-compile 'pl.dawidfiruzek:measurement:0.2'
+compile 'pl.dawidfiruzek:measurement:0.3'
 ```
 
 ### 2. Use it in your project
