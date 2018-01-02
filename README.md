@@ -30,9 +30,9 @@ Note that the library is in development phase, but is ready to use with it's min
 For now it supports basic weight and length units with adding and subtraction operation between corresponding types.
 
 Next development steps are:
-- support more <del>weight and</del> length units
-- add more arithmetic's operations (multiplication, division)
-- (Later) add area, and volume units with arithmetic's operations
+- [ ] support more <del>weight and</del> length units
+- [x] add more arithmetic's operations (multiplication, division)
+- [ ] (Later) add area, and volume units with arithmetic's operations
 
 
 License
