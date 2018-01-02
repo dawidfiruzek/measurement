@@ -27,10 +27,10 @@ enum class WeightUnits : Units {
         override val factor: BigDecimal = BigDecimal.valueOf(1e9)
     },
     LONG_TONS {
-        override val factor: BigDecimal = BigDecimal.valueOf(9.842065e-4)
+        override val factor: BigDecimal = BigDecimal.valueOf(9.84206528e-4)
     },
     SHORT_TONS {
-        override val factor: BigDecimal = BigDecimal.valueOf(1.1023113e-3)
+        override val factor: BigDecimal = BigDecimal.valueOf(1.10231131e-3)
     },
     HUNDREDWEIGHTS {
         override val factor: BigDecimal = BigDecimal.valueOf(1.96841306e-2)
@@ -57,7 +57,7 @@ enum class WeightUnits : Units {
         override val factor: BigDecimal = BigDecimal.valueOf(6.430149313726e2)
     },
     CARATS {
-        override val factor: BigDecimal = BigDecimal.valueOf(5.0000e3)
+        override val factor: BigDecimal = BigDecimal.valueOf(5.0e3)
     },
     GRAINS {
         override val factor: BigDecimal = BigDecimal.valueOf(1.54323583529414e4)
