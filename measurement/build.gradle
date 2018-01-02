@@ -3,7 +3,7 @@ apply plugin: 'com.jfrog.bintray'
 apply plugin: 'maven-publish'
 
 buildscript {
-    ext.libVersionName = "0.2"
+    ext.libVersionName = "0.3"
     repositories {
         jcenter()
     }
