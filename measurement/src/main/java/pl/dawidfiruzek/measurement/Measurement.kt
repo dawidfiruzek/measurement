@@ -31,4 +31,9 @@ class Measurement<T : Units>(private val value: BigDecimal, private val units: T
         val value = value * BigDecimal(factor)
         return Measurement(value, units)
     }
+
+    operator fun times(factor: Int): Measurement<T> {
+        val value = value * BigDecimal(factor)
+        return Measurement(value, units)
+    }
 }

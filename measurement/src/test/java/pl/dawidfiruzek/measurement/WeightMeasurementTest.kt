@@ -85,6 +85,6 @@ class WeightMeasurementTest : BaseTest() {
 
     @Test
     fun testMultiplication() {
-
+        val result = measurement * 0.67
     }
 }
