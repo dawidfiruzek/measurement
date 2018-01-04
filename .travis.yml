@@ -1,11 +1,13 @@
-language: java
+language: android
 
-jdk:
-  - oraclejdk8
-    
+android:
+  components:
+    - build-tools-26.0.2
+    - android-26
+
 cache:
   directories:
     - $HOME/.gradle
-  
+
 script:
   - ./gradlew :measurement:test
