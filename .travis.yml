@@ -1,2 +1,11 @@
 language: java
-./gradlew :measurement:test
+
+jdk:
+  - oraclejdk8
+  
+branches:
+  only:
+    - master
+    
+script:
+  - ./gradlew :measurement:test
