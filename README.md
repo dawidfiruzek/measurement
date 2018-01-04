@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/dawidfiruzek/measurement.svg?branch=master)](https://travis-ci.org/dawidfiruzek/measurement)
+
 # Disclaimer
 Library is in alpha phase, but is ready to use with it's basic functionality
 
