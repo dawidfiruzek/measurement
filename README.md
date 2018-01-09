@@ -1,10 +1,10 @@
-[ ![Download](https://api.bintray.com/packages/dawidfiruzek/kotlin/measurement/images/download.svg) ](https://bintray.com/dawidfiruzek/kotlin/measurement/_latestVersion)
-[![Build Status](https://travis-ci.org/dawidfiruzek/measurement.svg?branch=master)](https://travis-ci.org/dawidfiruzek/measurement)
-
 # Disclaimer
 Library is in alpha phase, but is ready to use with it's basic functionality
 
 # Measurement
+[ ![Download](https://api.bintray.com/packages/dawidfiruzek/kotlin/measurement/images/download.svg) ](https://bintray.com/dawidfiruzek/kotlin/measurement/_latestVersion)
+[![Build Status](https://travis-ci.org/dawidfiruzek/measurement.svg?branch=master)](https://travis-ci.org/dawidfiruzek/measurement)
+
 Measurement is a lightweight library based on the Swift's Measurement structure.
 
 It is made to help Java/Kotlin developers converting units to different, corresponding units with ease, e.g. for weight: stones to kilograms.
