@@ -1,3 +1,4 @@
+[ ![Download](https://api.bintray.com/packages/dawidfiruzek/kotlin/measurement/images/download.svg) ](https://bintray.com/dawidfiruzek/kotlin/measurement/_latestVersion)
 [![Build Status](https://travis-ci.org/dawidfiruzek/measurement.svg?branch=master)](https://travis-ci.org/dawidfiruzek/measurement)
 
 # Disclaimer
