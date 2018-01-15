@@ -10,7 +10,6 @@ It is made to help Java/Kotlin developers converting units to different, corresp
 Measurement also allows arithmetic operation between different, corresponding units. Just like in previous example you can add 2 kilograms to 4 stones and have result in pounds.
 
 Measurement is written in Kotlin, so it can interop with Java. 
-It has sample project written for Android framework, however the library itself has no dependencies to other frameworks and could be used in pure Java or Kotlin projects.
 
 ## Usage
 ### 1. Add gradle dependency

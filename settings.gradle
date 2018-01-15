@@ -1,1 +1,1 @@
-include ':measurement-sample', ':measurement'
+include ':measurement'
