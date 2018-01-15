@@ -2,8 +2,9 @@
 Library is in alpha phase, but is ready to use with it's basic functionality
 
 # Measurement
-[ ![Download](https://api.bintray.com/packages/dawidfiruzek/kotlin/measurement/images/download.svg) ](https://bintray.com/dawidfiruzek/kotlin/measurement/_latestVersion)
+[![Download](https://api.bintray.com/packages/dawidfiruzek/kotlin/measurement/images/download.svg) ](https://bintray.com/dawidfiruzek/kotlin/measurement/_latestVersion)
 [![Build Status](https://travis-ci.org/dawidfiruzek/measurement.svg?branch=master)](https://travis-ci.org/dawidfiruzek/measurement)
+[![Coverage Status](https://coveralls.io/repos/github/dawidfiruzek/measurement/badge.svg)](https://coveralls.io/github/dawidfiruzek/measurement)
 
 Measurement is a lightweight library based on the Swift's Measurement structure.
 
