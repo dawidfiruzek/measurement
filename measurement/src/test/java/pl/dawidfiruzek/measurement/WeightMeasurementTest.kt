@@ -182,4 +182,12 @@ class WeightMeasurementTest : BaseTest() {
         assertEquals(7.69230769e2, result.to(WeightUnits.CARATS), delta)
         assertEquals(2.3742089766633e3, result.to(WeightUnits.GRAINS), delta)
     }
+
+    @Test
+    fun roundingProblem() {
+        val measurement = Measurement(112.0, POUNDS)
+        val expectedKG = 50.8023454411
+
+        assertEquals(expectedKG, measurement.to(KILOGRAMS), delta)
+    }
 }
