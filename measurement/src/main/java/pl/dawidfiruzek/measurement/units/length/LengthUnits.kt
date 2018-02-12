@@ -20,7 +20,4 @@ enum class LengthUnits : Units {
     FEET {
         override val factor: BigDecimal = BigDecimal.valueOf(3.2808398950)
     };
-
-    override fun getBaseUnits(): Units =
-            values().first { it.factor == BigDecimal.valueOf(1.0) }
 }

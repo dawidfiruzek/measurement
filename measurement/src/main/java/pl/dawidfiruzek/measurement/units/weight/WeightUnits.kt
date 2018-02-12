@@ -62,7 +62,4 @@ enum class WeightUnits : Units {
     GRAINS {
         override val factor: BigDecimal = BigDecimal.valueOf(1.54323583529414e4)
     };
-
-    override fun getBaseUnits(): Units =
-            values().first { it.factor == BigDecimal.valueOf(1.0 )}
 }

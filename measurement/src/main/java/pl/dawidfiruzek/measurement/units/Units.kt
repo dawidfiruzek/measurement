@@ -4,5 +4,4 @@ import java.math.BigDecimal
 
 interface Units {
     val factor: BigDecimal
-    fun getBaseUnits(): Units
 }
