@@ -22,7 +22,7 @@ jacocoTestReport {
 
 bintray {
     user = hasProperty('BINTRAY_USER') ? BINTRAY_USER : System.getenv('BINTRAY_USER')
-    key = hasProperty('BINTRAY_KEY') ? BINTRAY_USER : System.getenv('BINTRAY_KEY')
+    key = hasProperty('BINTRAY_KEY') ? BINTRAY_KEY : System.getenv('BINTRAY_KEY')
     publications = ['release']
     pkg {
         repo = 'kotlin'
